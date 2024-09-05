@@ -1,38 +1,238 @@
-.App {
-  text-align: center;
+.App{
+  width:calc(100vw - 17px);
+  background-color: #161513;
+  padding: 0px 500px 0px 500px;
+  position: absolute;
+  box-sizing: border-box;
+  
 }
+.PortfolioContainer{
+  position: relative;
+  width: 100%;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.imgPerfilContainer{
+  margin-top: 70px;
+  & img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+}
+.txtNombre{
+  color: white;
+  font-size: 30px;
+  font-family: 'Inter Variable', sans-serif;
+  font-weight: 200;
+}
+.txtInfo{
+  color: white;
+  width: 600px;
+  text-align: center;
+  font-weight: 400;
+}
+.careerName{
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de color */
+  -webkit-background-clip: text; /* Clip del fondo solo al texto */
+  color: transparent; /* Elimina el color original del texto para mostrar el degradado */
+  font-weight: 800;
+}
+.btnCV{
+  margin-top: 20px;
+  border-radius: 30px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  width: 200px;
+  cursor: pointer;
+  &:hover{
+    background-color: white;
+    color: black;
+    & a{
+      color: black;
+    }
+  }
+}
+.ExperienceContainer{
+  color: white;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  & p{
+    font-size: 20px;
+    font-weight: 200;
+  }
+}
+.toolsContainer{
+  margin-top: 20px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & img{
+    width: 40px;
+  }
+}
+.ProyectsContainer{
+  margin-top: 100px;
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  & .ProjectsTitle{
+    font-size: 30px;
+  font-weight: 800;
+    font-family: 'Inter Variable', sans-serif;
+    background: linear-gradient(to top, #fd5c34, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+.cardsContainer{
+  margin: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.experienciaContainer{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  & .ExperienciaTitle{
+    font-size: 30px;
+  font-weight: 800;
+    font-family: 'Inter Variable', sans-serif;
+    background: linear-gradient(to top, #3459fd, #7bb4fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}
+.experienciaContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cadExperiencia{
+  width: 100%;
+  height: 180px;
+  margin-top: 30px;
+  margin-bottom: 100px;
+  position: relative;
+  & .headerCard{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px 0px 0px;
+  box-sizing: border-box;
+  & .logoEmpresa{
+    width: 50px;
+    margin-right: 5px;
+  }
+  }
+  & .txtInfo{
+    width: 100%;
+    text-align: start;
+    position: relative;
+    top: 35px;
+    font-weight: 200;
+  }
+}
+
+/* Estilos generales para pantallas grandes */
+.App {
+  width: calc(100vw - 17px);
+  background-color: #161513;
+  padding: 0px 500px;
+  position: absolute;
+  box-sizing: border-box;
+}
+
+/* Estilos responsivos para pantallas medianas */
+@media (max-width: 1200px) {
+  .App {
+    padding: 0px 200px;
+    width:100vw;
+  }
+
+  .txtInfo {
+    width: 80%;
+  }
+
+  .toolsContainer {
+    width: 130%;
+  }
+
+  .cardsContainer {
+    justify-content: space-around;
+  }
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .App {
+    padding: 0px 50px;
+  }
+
+  .txtInfo {
+    width: 100%;
+  }
+
+  .toolsContainer {
+    width: 120%;
+    justify-content: space-between;
+  }
+
+  .cardsContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cadExperiencia {
+    height: auto;
+    text-align: center;
+  }
+
+  .txtInfo {
+    font-size: 16px;
+  }
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+  .App {
+    padding: 0px 20px;
+  }
+
+  .txtNombre {
+    font-size: 24px;
+  }
+
+  .txtInfo {
+    font-size: 14px;
+    padding-top: 25px;
+  }
+
+  .toolsContainer img {
+    width: 30px;
+  }
+  .ProyectsContainer .ProjectsTitle,
+  .experienciaContainer .ExperienciaTitle {
+    font-size: 24px;
   }
 }

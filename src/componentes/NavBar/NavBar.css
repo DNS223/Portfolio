@@ -1,0 +1,91 @@
+.navBarContainer{
+    width: calc(100vw - 17px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #1E1E1D;
+    padding: 0px 500px 0px 500px;
+    box-sizing: border-box;
+}
+.navBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+}
+/* Estilos para pantallas grandes */
+.navBarContainer {
+    width: calc(100vw - 17px);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1d;
+    padding: 0px 500px;
+    box-sizing: border-box;
+  }
+  
+  .navBar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+  }
+  
+  /* Estilos responsivos para pantallas medianas */
+  @media (max-width: 1200px) {
+    
+    .navBarContainer {
+      padding: 0px 200px;
+      width: 100vw ;
+    }
+  
+    a {
+      font-size: 16px;
+    }
+  }
+  
+  /* Estilos responsivos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .navBarContainer {
+      padding: 0px 50px;
+    }
+  
+    a {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos para móviles */
+  @media (max-width: 480px) {
+    .navBarContainer {
+      padding: 0px 20px;
+    }
+  
+    a {
+      font-size: 12px;
+    }
+  
+    .navBar {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+    }
+  
+    .navBar a {
+      margin-bottom: 10px;
+    }
+  }
+  
