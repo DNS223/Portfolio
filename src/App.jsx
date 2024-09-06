@@ -13,7 +13,7 @@ function App() {
           He tenido la oportunidad de realizar practicas profesionales en el sector empresarial, lo que ha impulsado intensamente mi desarrollo como profesionista, 
           y desarrollando habilidades como la resiliencia, y el trabajo en equipo.
         </p>
-        <button className='btnCV'><a href="./Cv.pdf" target='blank'>Visualizar CV</a></button>
+        <a href="./Cv.pdf" target='blank' className='btnCV'>Visualizar CV</a>
         <div className='ExperienceContainer'>
             <p>EXPERIENCIA CON</p>
           <div className='toolsContainer'>
