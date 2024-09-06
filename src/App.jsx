@@ -29,7 +29,7 @@ function App() {
         <div className='ProyectsContainer'>
           <p className='ProjectsTitle'>PROYECTOS</p>
           <div className='cardsContainer'>
-          <ProyectCard imagen="./Proyecto1.png" proyectName="Editor de Playeras" link="https://personal-wear-cuukfg87r-dns223s-projects.vercel.app/" linkRepo="https://github.com/DNS223/PersonalWear"/>
+          <ProyectCard imagen="./Proyecto1.png" proyectName="Editor de Playeras" link="https://personal-wear.vercel.app/" linkRepo="https://github.com/DNS223/PersonalWear"/>
           <ProyectCard imagen="./Proyecto2.png" proyectName="Generdor de Paletas" link="https://color-pallete-generator-omega.vercel.app/" linkRepo="https://github.com/DNS223/Color-Pallete-Generator"/>
           <ProyectCard imagen="./Proyecto3.png" proyectName="Clon de Traductor" link="https://google-translate-clone-tan.vercel.app/" linkRepo="https://github.com/DNS223/Google-Translate-Clone"/>
           </div>
